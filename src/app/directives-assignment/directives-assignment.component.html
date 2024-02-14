@@ -1,0 +1,12 @@
+
+
+<div class="container">
+  <button class="mt btn btn-primary m-5" (click)="onClick()"> Display Details </button>
+  <p class="mt" *ngIf="isClicked"> Secret Password Asmaa </p>
+  <div class="mt"
+   *ngFor="let num of clickingTimes"
+    [ngStyle]="{'background-color': (num > 5) ? 'red' : '' }"
+    [ngClass]="{whiteColor : num>5}">
+    click numer {{num}}
+  </div>
+</div>
